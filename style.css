@@ -1,6 +1,8 @@
 :root{
     --width: 30vw;
     --height: 70vh;
+    --navheight:10vh;
+    font-size: 16px;
 }
 @keyframes move_wave {
     0% {
@@ -71,6 +73,21 @@
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;
 }
+nav{
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    background-color: transparent;
+    height: var(--navheight);
+    position: fixed;
+    top: 0%;
+    width: 98vw;
+    color: white;
+}
+#logo{
+    font-family: 'Edu SA Beginner', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+}
 #form-container{
     width: var(--width);
     height: var(--height);
@@ -81,6 +98,6 @@
     margin-top:  calc(-1 * (var(--height)*0.5));
     top: 50%;
     border-radius: 15px;
-    z-index: 999999;
+    z-index: 1000;
     box-shadow: 0px 0px 12px black;
 }
