@@ -133,6 +133,7 @@ input{
     width: 90%;
     border-radius: 5px;
     border: solid #E5E7EB 1px;
+    overflow: scroll;
 }
 input:valid{
     border: solid green 1px;
@@ -172,4 +173,17 @@ button[type='submit']:hover{
 #signin{
     color: #27273c;
     text-align: center;
+}
+@media all and (max-width: 550px) {
+    :root{
+        --width: 90vw;
+        --height: 60vh;
+    }
+}
+@media all and (min-width: 560px) and (max-width:1000px) {
+    :root{
+        --width: 60vw;
+        --height: 60vh;
+        font-size: 20px;
+    }
 }
