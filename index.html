@@ -28,10 +28,11 @@
         </div>
     </div>
     <div id="form-container">
-      <div id="typewriter"></div>
+      <div id="typewriter"></div> <hr>
 
       <div id="form-controls">
-        <form action="" method="post">
+        <form action="" method="">
+
           <fieldset id="fieldset1">
             <label for="first-name">
               FIRST NAME <br>
@@ -54,7 +55,7 @@
 
            <label for="phone-number">
              PHONE NUMBER <br>
-            <input type="number" name="phone-number" id="phone-number" required>
+            <input type="number" name="phone-number" id="phone-number" pattern="^0?(\\d{10})" title="must be either: 10 digits or 11 digits with 0 as the first number" placeholder="(0)-XXX-XXX-XXXX (Hyphens not included)" required>
            </label>  
          </fieldset>
          
@@ -71,6 +72,7 @@
          </fieldset>
 
          <button type="submit">Continue</button>
+         <div id="signin">Have an account? <a href="#">Sign-in</a></div>
         </form>
        </div>
     </div>
