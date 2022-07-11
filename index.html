@@ -27,7 +27,51 @@
         </div>
     </div>
     <div id="form-container">
+      <div id="typewriter">Not an actual Service</div>
 
+      <div id="form-controls">
+        <form action="" method="post">
+          <fieldset id="fieldset1">
+            <label for="first-name">
+              FIRST NAME <br>
+              <input type="text" name="first-name" id="first-name" placeholder="John" maxlength="20" required>
+           </label>
+               
+            <label for="last-name">
+              LAST NAME <br>
+              <input type="text" name="last-name" id="last-name" placeholder="Doe" maxlength="20" required>
+            </label>
+          </fieldset>
+          
+
+         <fieldset id="fieldset2">
+          
+           <label for="email">
+             EMAIL <br>
+             <input type="email" name="email" id="email" placeholder="you@example.com" required>
+           </label>
+
+           <label for="phone-number">
+             PHONE NUMBER <br>
+            <input type="number" name="phone-number" id="phone-number" pattern="^(?:(?:(?:\+?234(?:\h1)?|01)\h*)?(?:\(\d{3}\)|\d{3})|\d{4})(?::\W*\d{3})?\W*\d{4}$" maxlength="11" required>
+           </label>  
+         </fieldset>
+         
+         <fieldset id="fieldset3">
+           <label for="password">
+            PASSWORD <br>
+            <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+           </label>
+
+           <label for="confirm-password">
+             CONFIRM PASSWORD <br>
+            <input type="password" name="password" id="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+           </label>
+         </fieldset>
+
+         <button type="submit">Continue</button>
+        </form>
+       </div>
     </div>
 </body>
 </html>

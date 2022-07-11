@@ -100,4 +100,69 @@ nav{
     border-radius: 15px;
     z-index: 1000;
     box-shadow: 0px 0px 12px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#form-controls{
+    height: 80%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10%;
+    width: 100%;
+    height: 70%;
+}
+label{
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 700;
+}
+fieldset{
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+}
+input{
+    height: 60%;
+    width: 90%;
+    border-radius: 5px;
+    border: solid #E5E7EB 1px;
+}
+input:valid{
+    border: solid green ;
+}
+input:invalid{
+    border: solid red ;
+}
+input:focus{
+    border: solid navy ;
+    box-shadow: 0px 0px 5px black;
+}
+button[type='submit']{
+    --buttonWidth: 20%;
+    display: block;
+    width: var(--buttonWidth);
+    position: relative;
+    margin-left: calc(-1 * var(--buttonWidth)*0.5);
+    left: 50%;
+    height: 30px;
+    background-color: #27273c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 0px 5px black;
+}
+button[type='submit']:hover{
+    animation: colorchg 500ms ease-in 0s 1 forwards;
+}
+@keyframes colorchg {
+    100%{
+        background-color: #86377b;
+    }
 }
